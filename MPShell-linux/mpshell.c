@@ -46,7 +46,7 @@ int main(int argc, const char *argv[])
         else { show_usage(false); }
     }
 
-    if (host == NULL || strlen(host) == 0)                                                                       { show_usage(false); }
+    if (host == NULL || strlen(host) == 0)                                                                          { show_usage(false); }
     else if ((protocol != PROTOCOL_ICMP) && (port <= 0 || port > 65535))                                            { show_usage(false); }
     else if ((protocol != PROTOCOL_TCP) && (sleep_size <= 0))                                                       { show_usage(false); }
     else if ((protocol != PROTOCOL_TCP) && (timeout <= 0))                                                          { show_usage(false); }

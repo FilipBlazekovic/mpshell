@@ -47,7 +47,7 @@ int main(int argc, const char *argv[])
         else { show_usage(true); }
     }
 
-    if (host == NULL || strlen(host) == 0)                                                                     { show_usage(true); }
+    if (host == NULL || strlen(host) == 0)                                                                        { show_usage(true); }
     else if ((protocol != PROTOCOL_ICMP) && (port <= 0 || port > 65535))                                          { show_usage(true); }
     else if ((protocol != PROTOCOL_TCP) && (sleep_size <= 0))                                                     { show_usage(true); }
     else if ((protocol != PROTOCOL_TCP) && (max_payload_size <=0 || max_payload_size > DEFAULT_MAX_PAYLOAD_SIZE)) { show_usage(true); }
@@ -58,7 +58,7 @@ int main(int argc, const char *argv[])
         switch (protocol)
         {
             case PROTOCOL_TCP:  status = open_tcp_channel(host, port_string); break;
-            case PROTOCOL_UDP:  status = open_udp_channel(host, port);             break;
+            case PROTOCOL_UDP:  status = open_udp_channel(host, port);        break;
             case PROTOCOL_ICMP: status = open_icmp_channel(host);
         }
 
