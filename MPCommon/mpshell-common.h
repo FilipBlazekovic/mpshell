@@ -7,9 +7,6 @@
 
 #include "types.h"
 
-#define DEFAULT_SLEEP   100000     // 100 ms
-#define DEFAULT_TIMEOUT 2          // 2 s
-
 void init_buffers(void);
 void cleanup(void);
 void show_usage(bool windows);

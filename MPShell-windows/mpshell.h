@@ -11,6 +11,9 @@
 
 #include "../MPCommon/mpshell-common.h"
 
+#define DEFAULT_SLEEP   100     // 100 ms
+#define DEFAULT_TIMEOUT 2       // 2 s
+
 void execute_command(const char *command);
 
 void process_packet(
